@@ -1,6 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
 
-bootstrapApplication(AppComponent, appConfig)
+import { CalculadoraComponent } from '../projects/09_calculadora_servicio/src/app/calculadora/calculadora.component';
+
+bootstrapApplication(CalculadoraComponent, appConfig)
   .catch((err) => console.error(err));
