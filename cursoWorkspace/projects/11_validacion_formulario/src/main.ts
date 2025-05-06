@@ -1,7 +1,7 @@
+import { ValidacionComponent } from './app/validacion/validacion.component';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { AgendaComponent } from './app/agenda/agenda.component';
 
 
-bootstrapApplication(AgendaComponent, appConfig)
+bootstrapApplication(ValidacionComponent, appConfig)
   .catch((err) => console.error(err));
