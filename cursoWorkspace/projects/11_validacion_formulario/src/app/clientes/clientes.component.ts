@@ -12,6 +12,9 @@ import { ClienteService } from '../cliente/cliente_service';
 
 
 export class CLienteComponent {
+registrese() {
+throw new Error('Method not implemented.');
+}
   usuario:string;
   password:string;
   email:string;
@@ -31,9 +34,13 @@ export class CLienteComponent {
                         alert("No estàs registrado!")
                       }
     }
-    registrese():void{
+    registrar():void{
+      let c:Cliente=new Cliente(this.usuario,this.password,this.email,this.telefono);
+      this.clientesService.registrar(c);
+      this.visible=false;
+    }
 
-    }}
+  }
 
 
 
