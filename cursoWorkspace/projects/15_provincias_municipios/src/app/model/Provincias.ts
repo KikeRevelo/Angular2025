@@ -2,8 +2,8 @@ export  class Provincias{
   provincia:string;
 
   municipio:string;
-  habitantes:string;
-  altura:string;
+  habitantes:number;
+  altura:number;
 
 
 
